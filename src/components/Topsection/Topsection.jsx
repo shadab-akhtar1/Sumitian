@@ -10,10 +10,12 @@ export const Topsection = () => {
         <div className='grid md:pt-[100px]  md:gap-[42px] md:w-[500px] xl:w-[700px] md:h-[600px]'>
             <div className=''>
                 <div className=''><h2 className='xl:text-[64px] lg:text-[40px] text-[30px] font-bold text-[#121212] font-plus'>Unlock Your Academic Potential with Sumitian</h2></div>
-                <div className=' mt-[20px] pt-[20px]'><p className='xl:text-[22px] xl:w-[500px] lg:w-[350px] lg:text-[15px] md:text-[22px] font-medium text-[#202020] font-plus'>Unlock Your Academic Potential with Sumitian. Comprehensive Courses for Grades 9-12 - Anytime, Anywhere.</p></div>
+                
+                <div className='  pt-[20px]'><p className='xl:text-[22px] xl:w-[500px] lg:w-[350px] lg:text-[15px] md:text-[22px] font-medium text-[#202020] font-plus'>Unlock Your Academic Potential with Sumitian. Comprehensive Courses for Grades 9-12 - Anytime, Anywhere.</p></div>
+                <button className='bg-[#FFDA31] w-[207px] h-[48px] rounded-[8px] text-[#121212] font-semibold text-[14px] justify-center items-center flex mt-[30px]'>Get Our App</button>
             </div>
-            <div  className='mt-[20px]'>
-                <button className='bg-[#FFDA31] w-[207px] h-[48px] rounded-[8px] text-[#121212] font-semibold text-[14px] justify-center items-center flex'>Get Our App</button>
+            <div  className=''>
+                
             </div>
         </div>
         <div className=' h-[300px]  md:w-[500px] md:mt-[-20px] '>

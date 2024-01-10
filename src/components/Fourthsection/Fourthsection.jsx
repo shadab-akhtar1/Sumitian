@@ -49,7 +49,7 @@ export const Fourthsection = () => {
       
       <div className=" flex flex-col lg:flex-row gap-10 pt-14 ">
       {ServicesData.map((service) => (
-      <div className=" group flex flex-col items-center text-center gap-[10px] w-full  lg:w-[370px] p-[10px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-[9px] cursor-pointer ">
+      <div className="bg-[#FFDA31] bg-opacity-[30%] group flex flex-col items-center text-center gap-[10px] w-full  lg:w-[370px] p-[10px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-[9px] cursor-pointer ">
       <div className="  p-3 rounded-full transition-colors">
         <img src={service.img} alt="" className='w-[100px] h-[100px]'/>
       </div>

@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import logo from '../Assets/Frame 1686560812.png';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
@@ -39,31 +39,13 @@ export const Navbar = () => {
           </div>
 
           <nav className=" hidden lg:flex flex-row items-center text-[16px] font-semibold font-medium gap-8 ">
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
+            <Link to={"/"} className=" cursor-pointer">
               Home
             </Link>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
+            <Link to={"/aboutus"} className=" cursor-pointer">
               About Us
             </Link>
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
+            <Link to={"/contactus"} className=" cursor-pointer">
               Contact Us
             </Link>
             
@@ -98,32 +80,23 @@ export const Navbar = () => {
             menu ? "translate-x-0" : "-translate-x-full"
           } lg:hidden flex flex-col absolute bg-[yellow] text-[#121212] left-0  font-semibold text-[16px] text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
-          <Link
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
+          <Link to={"/"}
+           
+            className=" cursor-pointer"
             onClick={closeMenu}
           >
             Home
           </Link>
-          <Link
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
+          <Link to={"/aboutus"}
+            
+            className=" cursor-pointer"
             onClick={closeMenu}
           >
             About Us
           </Link>
-          <Link
-            to="services"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className=" hover:text-hoverColor transition-all cursor-pointer"
+          <Link to={"/contactus"}
+            
+            className=" cursor-pointer"
             onClick={closeMenu}
           >
             Contact Us
