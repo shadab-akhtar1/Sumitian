@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-scroll";
+
 import logo from '../Assets/Frame 1686560812.png';
 import apple from '../Assets/image 128.png';
 import google from '../Assets/image 129.png';
@@ -8,6 +8,7 @@ import facebook from '../Assets/ic (1).png';
 import linkedin from '../Assets/ic (2).png';
 import phone from '../Assets/Icon Button (1).png';
 import mail from '../Assets/Icon Button.png';
+import {Link} from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -50,17 +51,20 @@ export const Footer = () => {
             
              
               
-            
+            <Link to={"/"}>
               <li className=" cursor-pointer">Home</li>
+              </Link>
                
             
-            
+            <Link to={"/aboutus"}>
               <li className=" hover:text-hoverColor transition-all cursor-pointer">About Us</li>
+              </Link>
               
             
               
-            
+            <Link to={"/contactus"}>
               <li className="  cursor-pointer">Contact Us</li>
+              </Link>
               
               
             
@@ -74,12 +78,14 @@ export const Footer = () => {
             
              
               
-            
+            <Link to={"/privacypolicy"}>
               <li className=" cursor-pointer">Privacy Policy</li>
+              </Link>
                
             
-            
+            <Link to={"/termandcondition"}>
               <li className=" hover:text-hoverColor transition-all cursor-pointer">Terms & Condition</li>
+              </Link>
               
             
               
