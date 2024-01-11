@@ -36,7 +36,7 @@ export const Fourthsection = () => {
     <div className=" bg-[#FAFAFB] flex flex-col justify-center lg:px-[70px] px-5 py-24 lg:pt-16 font-plus ">
       <div className=" flex flex-col items-center lg:flex-row justify-between">
         <div>
-            <div className='w-[110px] h-[51px] flex justify-between items-center mb-[20px] bg-[#F5F6F7]'><div className='bg-[#FFDA31] w-[5px] h-[51px] flex justify-start'></div><div className='flex justify-end items-center '><h4 className='font-plus font-semibold pr-[10px] text-[16px] text-[#1A1C1F] items-center text-center'>Courses</h4></div></div>
+            <div className='w-[110px] h-[51px] flex justify-between items-center mb-[20px] bg-[#F5F6F7]'><div className='bg-[#FFDA31] w-[5px] h-[51px] flex justify-start'></div><div className='flex justify-end items-center '><h4 className='font-plus font-semibold pr-[20px] text-[16px] text-[#1A1C1F] items-center text-center'>Courses</h4></div></div>
           <h1 className=" text-4xl font-semibold text-center lg:text-start">
             Explore Our Courses 
           </h1>

@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import seventhiconpic from '../Assets/8690540_3959734 1.png';
 import { CiCircleChevDown } from "react-icons/ci";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowUp } from "react-icons/md";
 
 export const Seventhsection = () => {
+  const [show, setShow] = useState(false);
   return (
     <>
     <div className="  flex flex-col justify-center lg:px-[70px] lg:flex-row lg:justify-between lg;items-center px-5 py-24 lg:pt-16 font-plus ">
@@ -22,15 +25,16 @@ export const Seventhsection = () => {
                 <div className='flex flex-col justify-center items-center border-[1px] border-solid border-[#EEF0F3] xl-w-[800px] rounded-[8px] py-[5px] my-[5px]'>
                     <div className='lg:w-[500px] xl:w-[800px] lg:px-[20px] flex flex-row justify-between items-center'>
                         <h3 className='flex justify-start items-center font-semibold text-[18px] font-plus'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. ?</h3>
-                        <p className='flex justify-end items-center'><CiCircleChevDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px]'/></p>
+                        <p className='flex justify-end items-center' onClick={() =>setShow(!show)}>{show === false ? <MdKeyboardArrowDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px] text-[10px]' />: <MdKeyboardArrowUp className='w-[24px] h-[24px] rounded-[24px] bg-[#FFDA31] text-[white] text-[10px]'/>}</p>
                     </div>
+                    {show && 
                     <div className='lg:w-[500px] xl:w-[800px] px-[10px] flex justify-center items-center text-[16px] font-normal font-plus text-[#5B6572] my-[10px]'><p className=''>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
-
+                    }
                 </div>
                 <div className='flex flex-col justify-center items-center border-[1px] border-solid border-[#EEF0F3] xl-w-[800px] rounded-[8px] py-[5px] my-[5px]'>
                     <div className='lg:w-[500px] xl:w-[800px] lg:px-[20px] flex flex-row justify-between items-center'>
                         <h3 className='flex justify-start items-center font-semibold text-[18px] font-plus'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curs?</h3>
-                        <p className='flex justify-end items-center'><CiCircleChevDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px]'/></p>
+                        <p className='flex justify-end items-center'><MdKeyboardArrowDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px]'/></p>
                     </div>
                     
 
@@ -38,7 +42,7 @@ export const Seventhsection = () => {
                 <div className='flex flex-col justify-center items-center border-[1px] border-solid border-[#EEF0F3] xl-w-[800px] rounded-[8px] py-[5px] my-[5px]'>
                     <div className='lg:w-[500px] xl:w-[800px] lg:px-[20px] flex flex-row justify-between items-center'>
                         <h3 className='flex justify-start items-center font-semibold text-[18px] font-plus'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. ?</h3>
-                        <p className='flex justify-end items-center'><CiCircleChevDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px]'/></p>
+                        <p className='flex justify-end items-center'><MdKeyboardArrowDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px]'/></p>
                     </div>
                     
 
@@ -46,7 +50,7 @@ export const Seventhsection = () => {
                 <div className='flex flex-col justify-center items-center border-[1px] border-solid border-[#EEF0F3] xl-w-[800px] rounded-[8px] py-[5px] my-[5px]'>
                     <div className='lg:w-[500px] xl:w-[800px] lg:px-[20px] flex flex-row justify-between items-center'>
                         <h3 className='flex justify-start items-center font-semibold text-[18px] font-plus'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. ?</h3>
-                        <p className='flex justify-end items-center'><CiCircleChevDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px]'/></p>
+                        <p className='flex justify-end items-center'><MdKeyboardArrowDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px]'/></p>
                     </div>
                     
 
@@ -54,7 +58,7 @@ export const Seventhsection = () => {
                 <div className='flex flex-col justify-center items-center border-[1px] border-solid border-[#EEF0F3] xl-w-[800px] rounded-[8px] py-[5px] my-[5px]'>
                     <div className='lg:w-[500px] xl:w-[800px] lg:px-[20px] flex flex-row justify-between items-center'>
                         <h3 className='flex justify-start items-center font-semibold text-[18px] font-plus'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. ?</h3>
-                        <p className='flex justify-end items-center'><CiCircleChevDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px]'/></p>
+                        <p className='flex justify-end items-center'><MdKeyboardArrowDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px]'/></p>
                     </div>
                     
 
@@ -62,7 +66,7 @@ export const Seventhsection = () => {
                 <div className='flex flex-col justify-center items-center border-[1px] border-solid border-[#EEF0F3] xl-w-[800px] rounded-[8px] py-[5px] my-[5px]'>
                     <div className='lg:w-[500px] xl:w-[800px] lg:px-[20px] flex flex-row justify-between items-center'>
                         <h3 className='flex justify-start items-center font-semibold text-[18px] font-plus'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. ?</h3>
-                        <p className='flex justify-end items-center'><CiCircleChevDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px]'/></p>
+                        <p className='flex justify-end items-center '><MdKeyboardArrowDown className='bg-[#F5F6F7] text-[#121212] w-[24px] h-[24px] rounded-[24px] '/></p>
                     </div>
                     
 

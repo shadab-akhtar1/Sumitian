@@ -1,59 +1,74 @@
-import React,{useRef} from 'react';
+import React,{useRef, useState} from 'react';
 import Slider from "react-slick";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import { RiArrowLeftSLine } from "react-icons/ri";
+import { RiArrowRightSLine } from "react-icons/ri";
 import profile from '../Assets/Ellipse 5.png';
 
 export const Sixthsection = () => {
+
+ 
   const data = [
     {
       img: profile,
       name: "Dr. Serena Mitchell",
       description: "It was a very good experience",
       des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu."
+     
     },
     {
       img: profile,
       name: "Dr. Julian Bennett",
       description: "It was a very good experience",
+     
       des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu."
     },
     {
       img: profile,
       name: "Dr. Camila Rodriguez",
       description: "It was a very good experience",
+     
       des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu."
     },
     {
       img: profile,
       name: "Dr. Victor Nguyen",
       description: "It was a very good experience",
+      
       des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu."
     },
     {
       img: profile,
       name: "Dr. Ethan Carter",
       description: "It was a very good experience",
+      
       des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu."
     },
     {
       img: profile,
       name: "Dr. Olivia Martinez",
       description: "It was a very good experience",
+      
       des:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu ."
     },
   ];
 
   const slider = useRef(null);
+  
+  const [slideIndex,setSlideIndex] = useState(0);
 
   const settings = {
     accessibility: true,
     dots: true,
     infinite: true,
     speed: 500,
-    arrows: true,
+    arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
+    beforeChange:(current,next) =>setSlideIndex(next),
+    centerMode:true,
+ 
     responsive: [
       {
         breakpoint: 1023,
@@ -78,6 +93,16 @@ export const Sixthsection = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
+        
+        },
+      },
+      {
+        breakpoint: 360,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        
         },
       },
     ],
@@ -109,8 +134,8 @@ export const Sixthsection = () => {
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here
           </p>
         </div>
-        {/*
-        <div className="flex gap-5 mt-4 lg:mt-0">
+        
+        {/*<div className="flex gap-5 mt-4 lg:mt-0">
           <button
             className=" bg-[#d5f2ec] text-backgroundColor px-4 py-2 rounded-lg active:bg-[#ade9dc]"
             onClick={() => slider.current.slickPrev()}
@@ -127,14 +152,17 @@ export const Sixthsection = () => {
 */}
       </div>
       <div className=" mt-5 ">
-        <Slider ref={slider} {...settings} className="">
-          {data.map((e, ) => (
+        <Slider  ref={slider} {...settings} className="">
+          {data.map((e, index ) => (
+            <div className={index=== slideIndex ? ' lg:transform scale-100  text-black p-[10px] flex flex-col lg:flex lg:flex-row rounded-[12px]  mb-2 cursor-pointer border-[3px] border-solid border-[#FFDA31] ':' lg:transform scale-75  text-black p-[10px] flex flex-col lg:flex lg:flex-row rounded-[12px]  mb-2 cursor-pointer border-[3px] border-solid border-[#FFDA31] '} key={index}>
             <div
-              className=" xl:h-[400px] lg:w-[582px] text-black p-[10px] flex flex-col lg:flex lg:flex-row rounded-[12px]  mb-2 cursor-pointer border-[3px] border-solid border-[#FFDA31] gap-[20px] "
+              className="  "
               
             >
               <div className='flex flex-row justify-start items-center '>
-                <div><img src={e.img} alt="" className='h-[72px] w-[72px]'/></div>
+                <div >
+                  <img src={e.img} alt="" className='h-[72px] w-[72px]'/>
+                  </div>
                 <div className='flex flex-col pl-[10px]   '>
                   <p className='text-[24px] font-semibold font-plus text-[#000000]'>Leo</p>
                   <p className='text-[12px] font-normal font-plus text-[#000000]'>Student IX</p>
@@ -147,8 +175,26 @@ export const Sixthsection = () => {
                 <p className="  font-plus text-[15px] font-normal leading-[21.6px] text-center  ">{e.des}</p>
               </div>
             </div>
+            </div>
+            
+            
           ))}
+          
         </Slider>
+        <div className="flex gap-5 mt-4 lg:mt-0">
+          <button
+            className="absolute left-[550px] py-[5px]  px-4  rounded-lg "
+            onClick={() => slider.current.slickPrev()}
+          >
+            <RiArrowLeftSLine size={20} />
+          </button>
+          <button
+            className="absolute right-[550px]  py-[5px] px-4  rounded-lg "
+            onClick={() => slider.current.slickNext()}
+          >
+            <RiArrowRightSLine size={20} />
+          </button>
+        </div>
       </div>
     </div>
     </>

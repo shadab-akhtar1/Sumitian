@@ -41,7 +41,7 @@ export const Secondsection = () => {
     <div className=" bg-[#FAFAFB] flex flex-col justify-center lg:px-[70px] px-5 py-24 lg:pt-16 font-plus">
       <div className=" flex flex-col items-center lg:flex-row justify-between">
         <div>
-            <div className='w-[110px] h-[51px] flex justify-between items-center mb-[20px] bg-[#F5F6F7]'><div className='bg-[#FFDA31] w-[5px] h-[51px]'></div><h4 className='font-plus font-semibold text-[20px] text-[#1A1C1F] items-center text-center'>Features</h4></div>
+            <div className='w-[116px] h-[51px] flex justify-between items-center mb-[20px] bg-[#F5F6F7]'><div className='bg-[#FFDA31] w-[5px] h-[51px]'></div><h4 className='font-plus font-semibold text-[16px] text-[#1A1C1F] items-center text-center pr-[20px]'>Features</h4></div>
           <h1 className=" text-4xl font-semibold text-center lg:text-start">
             Why Choose Sumitian?
           </h1>
