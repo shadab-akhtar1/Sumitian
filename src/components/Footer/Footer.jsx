@@ -14,40 +14,41 @@ export const Footer = () => {
   return (
     <>
     <div className=" bg-[#FFDA31] text-[#121212]  mt-8 md:mt-0">
-      <div className="flex flex-col md:flex-row justify-between pt-8 md:px-[70px] px-5">
-        <div className=" ">
+      <div className=" grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6  gap-4 pt-8  lg:mx-[70px] px-5">
+        <div className="mx-[10px]">
           <h1 className=" "><img src={logo} alt="" className='w-[85px] h-[84px]'/></h1>
          
         </div>
-        <div>
+        <div className='mx-[10px]'>
         <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0 font-plus font-semibold text-[18px] text-[#121212]">Download Now</h1>
         <nav className='flex flex-col gap-2'>
-                <div className=''><img src={apple} alt="" className='rounded-[8px] h-[40px] w-[134px]'/></div>
-                <div className=''><img src={google} alt="" className='rounded-[8px] h-[40px] w-[134px]'/></div>
+                <div className=''><img src={apple} alt="" className='rounded-[8px] lg:h-[40px] lg:w-[134px]  w-[134px] h-[40px]'/></div>
+                <div className=''><img src={google} alt="" className='rounded-[8px] lg:h-[40px] lg:w-[134px]   w-[134px] h-[40px]'/></div>
         </nav>
         </div>
+        
 
-        <div className='mt-[20px]'>
+        <div className='mt-[20px] mr-[20px]'>
         
         <nav className='flex flex-col gap-2'>
-                <div className='flex flex-row '><img src={phone} alt="" className='rounded-[8px] h-[40px] w-[40px]'/>
+                <div className='flex flex-row '><img src={phone} alt="" className='rounded-[8px] h-[40px] w-[40px]  md:rounded-[4px] lg:rounded-[8px] lg:w-[40px] lg:h-[40px]'/>
                 <div className='flex flex-col ml-[10px]'>
-                <p className='font-plus font-semibold text-[14px] text-[#121212]'>Phone</p>
-                <p className='font-plus font-semibold text-[16px] text-[#121212]'>+91 123456789</p>
+                <p className='font-plus font-semibold text-[14px] text-[#121212]  lg:text-[14px]'>Phone</p>
+                <p className='font-plus font-semibold text-[16px] text-[#121212]  lg:text-[16px]'>+91 123456789</p>
                 </div>
                 </div>
-                <div className='flex flex-row'><img src={mail} alt="" className='rounded-[8px] h-[40px] w-[40px]'/>
+                <div className='flex flex-row md:flex md:flex-row lg:flex lg:flex-row'><img src={mail} alt="" className='rounded-[8px] h-[40px] w-[40px]  lg:rounded-[8px] lg:w-[40px] lg:h-[40px]'/>
                 <div className='flex flex-col ml-[10px]'>
-                <p className='font-plus font-semibold text-[14px] text-[#121212]'>Mail</p>
-                <p className='font-plus font-semibold text-[16px] text-[#121212]'>info@sumitian.com</p>
+                <p className='font-plus font-semibold text-[14px] text-[#121212]  lg:text-[14px]'>Mail</p>
+                <p className='font-plus font-semibold text-[16px] text-[#121212]  lg:text-[16px]'>info@sumitian.com</p>
                 </div>
                 </div>
         </nav>
         </div>
 
-        <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0  font-plus font-semibold text-[18px] text-[#121212]">Links</h1>
-          <ul className="text-[16px] text-[#121212] font-plus font-semibold flex flex-col gap-2">
+        <div className='lg:ml-[40px] mx-[10px]'>
+          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0  font-plus font-semibold text-[18px]  lg:text-[18px] text-[#121212]">Links</h1>
+          <ul className="text-[16px]  lg:text-[16px] text-[#121212] font-plus font-semibold flex flex-col gap-2">
             
              
               
@@ -72,9 +73,9 @@ export const Footer = () => {
             
           </ul>
         </div>
-        <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0  font-plus font-semibold text-[18px] text-[#121212]">Others</h1>
-          <ul className="text-[16px] text-[#121212] font-plus font-semibold flex flex-col gap-2">
+        <div className='mx-[10px]'>
+          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0  font-plus font-semibold text-[18px]  lg:text-[18px]  text-[#121212]">Others</h1>
+          <ul className="text-[16px]  lg:text-[16px] text-[#121212] font-plus font-semibold flex flex-col gap-2">
             
              
               
@@ -98,8 +99,8 @@ export const Footer = () => {
             
           </ul>
         </div>
-        <div className=" ">
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0  font-plus font-semibold text-[18px] text-[#121212]">Conect With Us</h1>
+        <div className=" mx-[10px]">
+          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0  font-plus font-semibold text-[18px]  lg:text-[18px] text-[#121212]">Conect With Us</h1>
           <nav className=" flex flex-row gap-2">
            {/*<Link to="/" spy={true} smooth={true} duration={500}>
               123 Elm Street, Suite 456 Springfield, IL 62701 United States
@@ -110,9 +111,9 @@ export const Footer = () => {
             <Link to="/" spy={true} smooth={true} duration={500}>
               +123-456-7890
   </Link>*/}
-            <div><img src={insta} alt="" /></div>
-            <div><img src={facebook} alt="" /></div>
-            <div><img src={linkedin} alt="" /></div>
+            <div><img src={insta} alt="" className='rounded-[8px] h-[40px] w-[40px]  lg:rounded-[8px] lg:w-[40px] lg:h-[40px]'/></div>
+            <div><img src={facebook} alt="" className='rounded-[8px] h-[40px] w-[40px]  lg:rounded-[8px] lg:w-[40px] lg:h-[40px]'/></div>
+            <div><img src={linkedin} alt="" className='rounded-[8px] h-[40px] w-[40px]  lg:rounded-[8px] lg:w-[40px] lg:h-[40px]'/></div>
           </nav>
         </div>
       </div>

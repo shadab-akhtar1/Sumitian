@@ -183,13 +183,13 @@ export const Sixthsection = () => {
         </Slider>
         <div className="flex gap-5 mt-4 lg:mt-0">
           <button
-            className="absolute left-[550px] py-[5px]  px-4  rounded-lg "
+            className=" sm:hidden absolute lg:left-[600px] xl:left-[550px]   lg:py-[5px]  px-4  rounded-lg "
             onClick={() => slider.current.slickPrev()}
           >
             <RiArrowLeftSLine size={20} />
           </button>
           <button
-            className="absolute right-[550px]  py-[5px] px-4  rounded-lg "
+            className=" sm:hidden absolute lg:right-[600px] xl:right-[550px]   lg:py-[5px] px-4  rounded-lg "
             onClick={() => slider.current.slickNext()}
           >
             <RiArrowRightSLine size={20} />
