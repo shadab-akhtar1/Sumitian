@@ -6,7 +6,7 @@ import women from '../Assets/friendly-confident-woman-writing-her-organizer-isol
 export const Topsection = () => {
   return (
     <>
-    <div className=' flex flex-col xl:min-h-screen container  sm:p-[20px]  md:flex md:flex-row md:justify-between  md:p-[-20px] md:pl-[70px] '>
+    <div className=' flex flex-col xl:min-h-screen container  sm:px-[20px] sm:pt-[20px] md:flex md:flex-row md:justify-between  md:p-[-20px] md:pl-[70px] '>
         <div className='grid md:pt-[100px]  md:gap-[42px] md:w-[500px] xl:w-[700px] md:h-[600px]'>
             <div className=''>
                 <div className=''><h2 className='xl:text-[64px] lg:text-[40px] text-[30px] font-bold text-[#121212] font-plus'>Unlock Your Academic Potential with Sumitian</h2></div>

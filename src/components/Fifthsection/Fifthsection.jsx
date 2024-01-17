@@ -22,20 +22,20 @@ export const Fifthsection = () => {
           <h1 className="mt-[20px] text-4xl font-semibold text-center lg:text-start">
             What We Provide:
           </h1>
-          <div className='flex flex-col lg:flex lg:flex-row lg;justify-between items-center '>
+          <div className='flex flex-col lg:flex lg:flex-row lg:justify-between items-center '>
           <div className='flex flex-col '>
             <div className='flex flex-col items-center lg:flex lg:flex-row lg:justify-between  border-[1px] border-solid border-[#ECF2F8] rounded-[9px] my-[5px]'>
                 <div className='pl-[10px]'><img src={videoicon} alt="" /></div>
                 <div className='px-[20px]'>
-                    <h1 className='font-plus font-semibold text-[28px] text-[#000000] '>Video Lesson</h1>
-                    <p className='text-[16px] font-normal font-plus text-[#737373]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauriLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauri</p>
+                    <h1 className='font-plus font-semibold text-[26px] text-[#000000] '>Video Lesson</h1>
+                    <p className='text-[14px] font-normal font-plus text-[#737373] leading-[25.6px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauriLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauri</p>
                 </div>
             </div>
             <div className='flex flex-col items-center lg:flex lg:flex-row lg:justify-between   border-[1px] border-solid border-[#ECF2F8] rounded-[9px] my-[5px]'>
                 <div className='pl-[10px]'><img src={pdficon} alt="" /></div>
                 <div className='px-[20px]'>
-                    <h1 className='font-plus font-semibold text-[28px] text-[#000000] '>PDF Resources</h1>
-                    <p className='text-[16px] font-normal font-plus text-[#737373]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauriLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauri</p>
+                    <h1 className='font-plus font-semibold text-[26px] text-[#000000] '>PDF Resources</h1>
+                    <p className='text-[14px] font-normal font-plus text-[#737373] leading-[25.6px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauriLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauri</p>
                 </div>
             </div>
             <div className='border-[1px] border-solid border-[#ECF2F8] rounded-[9px] my-[5px]'>
@@ -43,7 +43,7 @@ export const Fifthsection = () => {
                 <div className='pl-[10px]'><img src={peopleicon} alt="" /></div>
                 <div className='px-[20px]'>
                     <h3 className='font-plus font-semibold text-[26px] text-[#000000] '>Expert Content</h3>
-                    <p className='text-[16px] font-normal font-plus text-[#737373] leading-[25.6px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauriLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauri</p>
+                    <p className='text-[14px] font-normal font-plus text-[#737373] leading-[25.6px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauriLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada vehicula congue. Phasellus mauri</p>
                 </div>
             </div>
             </div>
